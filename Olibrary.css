@@ -1,0 +1,70 @@
+nav {
+  background-color: beige;
+  overflow: hidden;
+}
+nav ul {
+  list-style-type: none;
+  padding: 0px 0px 0px 0px;
+  margin: 0px;
+}
+
+nav li {
+  float: left;
+
+}
+
+nav li a {
+  display: block;
+  font-size: 23px;  /* Increase font size */
+  font-weight: bold; /* Make text bold */
+  text-align: center; 
+  color: brown;
+  padding: 24px 148px;
+  text-decoration: none;
+}
+
+nav li a:hover {
+  background-color: brown;
+  color: beige;
+}
+
+body.current-page {
+  background-color: #e0e0e0;
+}
+body{
+background-image:url("library.jpg");
+color: white;
+}
+.active {
+    background-color: #EAB126; /* Set your desired color */
+    /* Other styles like font color, etc. */
+}
+.slide-text {
+  /* Style your text here */
+  margin-top: 50px;
+  margin-bottom: 0px;
+border-bottom: 0px;
+  font-size: 80px;
+  color: beige;
+  /* Animation properties */
+  animation: slideIn 0.5s ease-in-out forwards;
+}
+.slide-text1 {
+  /* Style your text here */
+margin-top: 10px;
+
+  font-size: 40px;
+  color: beige;
+  /* Animation properties */
+  animation: slideIn 0.5s ease-in-out forwards;
+}
+
+/* Animation definition */
+@keyframes slideIn {
+  from {
+    transform: translateX(-100%); /* Start from outside left */
+  }
+  to {
+    transform: translateX(0); /* Slide to the right */
+  }
+}
