@@ -1,0 +1,36 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('library2.jpg'); 
+    background-position: center;
+}
+
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8); 
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+h1, h2 {
+    color: #333;
+}
+
+p {
+    color: #666;
+}
+
+.people-image {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+    .people-image img {
+        width: 200px; /* Adjust the size as needed */
+        border-radius: 20%;
+        box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
