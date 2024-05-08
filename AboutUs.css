@@ -2,26 +2,30 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-image: url('library2.jpg'); 
+    background-image: url('library2.jpg');
     background-position: center;
+    font-family: 'Courier New', Courier, monospace;
+
 }
 
 .container {
-    max-width: 800px;
+    max-width: 900px;
     margin: 20px auto;
     padding: 20px;
-    background-color: rgba(255, 255, 255, 0.8); 
+    background-color: rgba(255, 255, 255, 0.9);
     border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 h1, h2 {
     color: #333;
-    text-align: center; /* Center headings */
+    text-align: center;
 }
 
 p {
-    color: #666;
+    font-size:large;
+    font-weight: 500;
+    color: #333;
 }
 
 .people-image {
@@ -31,7 +35,70 @@ p {
 }
 
 .people-image img {
-    width: 275px; /* Adjust the size as needed */
+    width: 275px;
     border-radius: 20%;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.navbar li {
+    float: none;
+    text-align: right;
+}
+
+
+
+.menu-toggle {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    z-index: 999;
+    background-color: #FEF3D5;
+    color: #333;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.navbar {
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: rgba(255, 255, 255, 0.9);
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0;
+    transition: width 0.3s ease;
+    z-index: 900; /* Ensure it's below the menu toggle button */
+}
+
+.navbar.open {
+    width: 250px;
+}
+
+
+.navbar ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    margin-top: 150px; /* Adjust the top margin to avoid overlapping with the menu toggle button */
+}
+
+.navbar a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.navbar a:hover {
+    background: #FEF3D5;
+    color: black;
+}
+
+.navbar .active {
+    background-color: #FEF3D5;
+    color: black;
 }
