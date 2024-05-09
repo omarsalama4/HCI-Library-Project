@@ -9,8 +9,11 @@ body {
   font-family: Arial, sans-serif;
   background-color: #f0f0f0;
   background-image: url('library2.jpg');
-  font-family: 'Courier New', Courier, monospace;
-
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-size: cover;
+  overscroll-behavior: none;
+  min-height: 100vh; 
+  position: relative;
 }
 
 header {
@@ -22,9 +25,9 @@ header {
   max-width: 900px;
   margin: 20px auto;
   padding: 20px;
-  background-color: rgba(255, 255, 255, 0.9);
+  background-color: rgba(255, 255, 255, 0.95);
   border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
 }
 
 h1 {
@@ -42,31 +45,62 @@ p {
 }
 
 .featured-books {
-  margin-bottom: 40px;
   justify-content: space-between;
+  margin-bottom: 40px;
 }
 
 .featured-books h2 {
   font-size: 20px;
-  margin-bottom: 10px;
 }
 
 
-.upcoming-events {
+.upcoming-books {
   margin-bottom: 40px;
 }
 
-.upcoming-events h2 {
+.upcoming-books h2 {
   font-size: 20px;
   margin-bottom: 10px;
 }
 
-.upcoming-events ul {
+.upcoming-books ul {
   list-style: none;
 }
 
-.upcoming-events li {
+.upcoming-books li {
   margin-bottom: 10px;
+}
+
+
+.book-container {
+  display:flex;
+  justify-content: space-between;
+}
+
+.book {
+  width: 250px;
+  margin: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+.book img {
+  border-radius: 5px;
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.book h3 {
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+.book p {
+  font-size: 14px;
+  margin-bottom: 5px;
 }
 .navbar li {
   float: none;
@@ -91,7 +125,7 @@ p {
 .navbar {
   border-radius: 10px;
   overflow: hidden;
-  background-color: rgba(255, 255, 255, 0.9);
+  background-color: rgba(255, 255, 255, 0.95);
   position: fixed;
   top: 0;
   left: 0;
@@ -131,34 +165,39 @@ p {
   color: black;
 }
 
-/* Existing CSS styles remain unchanged */
 
-.book-container {
-  display:inline-flex;
-  justify-content: space-between;
-}
-
-.book {
-  width: 285px;
-
-  border: 1px solid #ccc;
+.view-more-btn {
+  display: block;
+  margin: 20px auto;
+  padding: 10px 20px;
+  width: 200px;
+  background-color: #FEF3D5;
+  color: #333;
+  border: none;
   border-radius: 5px;
-  padding: 10px;
-  margin-bottom: 20px;
+  cursor: pointer;
+  font-size: 24px;
+  transition: background-color 0.3s ease;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+
 }
 
-.book img {
-  max-width: 100%;
-  height: auto;
-  margin-bottom: 10px;
+.view-more-btn:hover {
+  background-color: #555;
+  color: #f0f0f0;
 }
 
-.book h3 {
-  font-size: 16px;
-  margin-bottom: 5px;
-}
 
-.book p {
-  font-size: 14px;
-  margin-bottom: 5px;
+.message-bar {
+  border-radius: 10px;
+  position: absolute;
+  max-width: 900px;
+  max-height: 200px;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #333;
+  padding: 10px 20px;
+  text-align: center;
+  width: 100%;
 }

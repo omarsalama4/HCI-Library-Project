@@ -4,17 +4,20 @@ body {
     padding: 0;
     background-image: url('library2.jpg');
     background-position: center;
-    font-family: 'Courier New', Courier, monospace;
-
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    background-size: cover;
+    overscroll-behavior: none;
+    min-height: 120vh; 
+    position: relative;
 }
-
 .container {
     max-width: 900px;
     margin: 20px auto;
     padding: 20px;
-    background-color: rgba(255, 255, 255, 0.9);
+    margin-bottom: 50px;
+    background-color: rgba(255, 255, 255, 0.95);
     border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.0.4);
 }
 
 h1, h2 {
@@ -26,6 +29,7 @@ p {
     font-size:large;
     font-weight: 500;
     color: #333;
+
 }
 
 .people-image {
@@ -37,7 +41,7 @@ p {
 .people-image img {
     width: 275px;
     border-radius: 20%;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    box-shadow: 0 0 10px rgba(0,0,0,0.0.3);
 }
 
 .navbar li {
@@ -63,7 +67,7 @@ p {
 .navbar {
     border-radius: 10px;
     overflow: hidden;
-    background-color: rgba(255, 255, 255, 0.9);
+    background-color: rgba(255, 255, 255, 0.95);
     position: fixed;
     top: 0;
     left: 0;
@@ -102,3 +106,17 @@ p {
     background-color: #FEF3D5;
     color: black;
 }
+
+
+
+
+.message-bar {
+    margin-top: 30px;
+    position: relative;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #333;
+    text-align: center;
+    width: 100%;
+  }
