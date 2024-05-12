@@ -1,0 +1,205 @@
+/* Add your styles for the Books page here */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('library2.jpg');
+    background-position: center;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    background-size: cover;
+    overscroll-behavior: none;
+    min-height: 120vh; 
+    position: relative;
+}
+
+.container {
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 20px;
+    margin-bottom: 50px;
+    background-color: rgba(255, 255, 255, 0.95);
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.0.4);
+}
+
+h1 {
+    color: #333;
+    text-align: center;
+}
+
+.menu-toggle {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    z-index: 999;
+    background-color: #FEF3D5;
+    color: #333;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.filter-toggle {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 999;
+    background-color: #FEF3D5;
+    color: #333;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.menu-toggle {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    z-index: 999;
+    background-color: #FEF3D5;
+    color: #333;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.navbar {
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: rgba(255, 255, 255, 0.95);
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0;
+    transition: width 0.3s ease;
+    z-index: 900; /* Ensure it's below the menu toggle button */
+}
+
+.navbar.open {
+    width: 250px;
+}
+
+
+.navbar ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    margin-top: 150px; /* Adjust the top margin to avoid overlapping with the menu toggle button */
+}
+
+.navbar a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.navbar a:hover {
+    background: #FEF3D5;
+    color: black;
+}
+
+.navbar .active {
+    background-color: #FEF3D5;
+    color: black;
+}
+
+.filter-toggle {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 999;
+    background-color: #FEF3D5;
+    color: #333;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.filter-bar {
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: rgba(255, 255, 255, 0.95);
+    position: fixed;
+    top: 60px; /* Adjust to move the filter bar below the filter button */
+    right: 20px; /* Adjust to position the filter bar under the filter button */
+    width: 0;
+    transition: width 0.3s ease;
+    z-index: 900; /* Ensure it's below the filter toggle button */
+    text-align: center; /* Center the elements inside */
+}
+
+.filter-bar.open {
+    width: 250px;
+}
+
+.filter-bar ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    margin-top: 20px; /* Adjust to add space between the toggle button and filter options */
+}
+
+.filter-bar label {
+    display: block; /* Make labels display as block elements */
+    margin-bottom: 10px; /* Add space between each filter option */
+}
+
+.filter-bar input[type="checkbox"] {
+    display: inline-block; /* Display checkboxes as inline-block */
+    vertical-align: middle; /* Align checkboxes vertically in the middle */
+    margin: 0; /* Remove any margin */
+    padding: 0; /* Remove any padding */
+}
+
+.filter-bar a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.filter-bar a:hover {
+    background: #FEF3D5;
+    color: black;
+}
+
+.filter-bar .active {
+    background-color: #FEF3D5;
+    color: black;
+}
+
+#book-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 60px; /* Adjust based on the height of the filter bar */
+}
+
+.book {
+    width: 200px;
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.book img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.book-title {
+    font-weight: bold;
+    margin-top: 5px;
+}

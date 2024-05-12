@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Books - Online Library</title>
+    <link rel="stylesheet" href="books.css">
+</head>
+<body>
+
+    <header>
+        <button class="menu-toggle" onclick="toggleMenu()">Menu</button>
+        <button class="filter-toggle" onclick="toggleFilter()">Filter</button>
+        <nav class="navbar" id="navbar">
+            <ul>
+                <li><a href="Home.html">Home</a></li>
+                <li><a href="books.html">Menu</a></li>
+                <li><a href="reviews.html">Reviews</a></li>
+                <li><a href="About Us.html">About Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h1>Books</h1>
+
+        <!-- Filter Bar -->
+        <div class="filter-bar" id="filter-bar">
+            <h3>Filter by Category:</h3>
+            <label><input type="checkbox" onchange="filterBooks()"> Fiction</label>
+            <label><input type="checkbox" onchange="filterBooks()"> Non-Fiction</label>
+            <label><input type="checkbox" onchange="filterBooks()"> Science</label>
+            <label><input type="checkbox" onchange="filterBooks()">Drama</label>
+            <!-- Add more categories as needed -->
+        </div>
+
+        <!-- Book Listing -->
+        <div id="book-list">
+            <!-- Books will be dynamically added here -->
+        </div>
+
+    </div>
+    
+    <script src="books.js"></script>
+</body>
+</html>
