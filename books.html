@@ -14,7 +14,7 @@
         <nav class="navbar" id="navbar">
             <ul>
                 <li><a href="Home.html">Home</a></li>
-                <li><a href="books.html">Menu</a></li>
+                <li><a href="menu.html">Menu</a></li>
                 <li><a href="reviews.html">Reviews</a></li>
                 <li><a href="About Us.html">About Us</a></li>
             </ul>
@@ -23,22 +23,24 @@
 
     <div class="container">
         <h1>Books</h1>
-
+    
         <!-- Filter Bar -->
-        <div class="filter-bar" id="filter-bar">
-            <h3>Filter by Category:</h3>
-            <label><input type="checkbox" onchange="filterBooks()"> Fiction</label>
-            <label><input type="checkbox" onchange="filterBooks()"> Non-Fiction</label>
-            <label><input type="checkbox" onchange="filterBooks()"> Science</label>
-            <label><input type="checkbox" onchange="filterBooks()">Drama</label>
-            <!-- Add more categories as needed -->
-        </div>
+<div class="filter-bar" id="filter-bar">
+    <h3>Filter by Category:</h3>
+    <label><input type="checkbox" onchange="filterBooks()"> Fiction</label>
+    <label><input type="checkbox" onchange="filterBooks()"> Non-Fiction</label>
+    <label><input type="checkbox" onchange="filterBooks()"> Science</label>
+    <label><input type="checkbox" onchange="filterBooks()"> Drama</label>
+    <!-- Add more categories as needed -->
 
+    <!-- Search Bar -->
+    <input type="text" id="search" oninput="searchBooks()" placeholder="Search by title...">
+</div>
+    
         <!-- Book Listing -->
         <div id="book-list">
             <!-- Books will be dynamically added here -->
         </div>
-
     </div>
     
     <script src="books.js"></script>

@@ -109,6 +109,7 @@ h1 {
     color: black;
 }
 
+/* Add your styles for the Books page here */
 .filter-toggle {
     position: fixed;
     top: 20px;
@@ -175,6 +176,21 @@ h1 {
     background-color: #FEF3D5;
     color: black;
 }
+
+.filter-bar input[type="text"] {
+    width: 80%; /* Adjust the width as needed */
+    padding: 10px; /* Add padding to make it visually appealing */
+    margin: 10px auto; /* Center the input horizontally and add some margin */
+    border: 1px solid #ccc; /* Add a border for clarity */
+    border-radius: 5px; /* Add some border-radius for rounded corners */
+    box-sizing: border-box; /* Ensure padding and border are included in the width */
+    transition: width 0.3s ease; /* Add transition for smooth resizing */
+}
+
+.filter-bar input[type="text"]:focus {
+    width: 90%; /* Expand the width when focused */
+}
+
 
 #book-list {
     display: flex;
