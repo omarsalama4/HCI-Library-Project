@@ -65,6 +65,10 @@ h3 {
     transition: width 0.001s ease;
     z-index: 900;
 }
+.filter-bar h3{
+    text-align: left;
+    margin-left: 10 px;
+}
 .filter-bar {
     border-radius: 10px;
     overflow: hidden;
@@ -75,7 +79,7 @@ h3 {
     width: 0;
     transition: width 0.3s ease;
     z-index: 900;
-    text-align: center;
+    text-align: left;
 }
 
 .navbar.open {
@@ -117,6 +121,8 @@ h3 {
 .filter-bar label {
     display:block;
     margin-bottom: 10px;
+    margin-left: 20px;
+
 }
 
 .search input[type="checkbox"] {
