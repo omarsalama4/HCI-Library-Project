@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Books - Online Library</title>
     <link rel="stylesheet" href="books.css">
+    <link rel="icon" href="online-library.png" type="image/x-icon">
+
 </head>
 <body>
 
@@ -14,8 +16,8 @@
         <nav class="navbar" id="navbar">
             <ul>
                 <li><a href="Home.html">Home</a></li>
-                <li><a href="menu.html">Menu</a></li>
-                <li><a href="reviews.html">Reviews</a></li>
+                <li><a href="books.html"  class="active">Books</a></li>
+                <li><a href="Review.html">Reviews</a></li>
                 <li><a href="About Us.html">About Us</a></li>
             </ul>
         </nav>
@@ -23,23 +25,25 @@
 
     <div class="container">
         <h1>Books</h1>
-    
-        <!-- Filter Bar -->
-<div class="filter-bar" id="filter-bar">
-    <h3>Filter by Category:</h3>
-    <label><input type="checkbox" onchange="filterBooks()"> Fiction</label>
-    <label><input type="checkbox" onchange="filterBooks()"> Non-Fiction</label>
-    <label><input type="checkbox" onchange="filterBooks()"> Science</label>
-    <label><input type="checkbox" onchange="filterBooks()"> Drama</label>
-    <!-- Add more categories as needed -->
 
-    <!-- Search Bar -->
-    <input type="text" id="search" oninput="searchBooks()" placeholder="Search by title...">
-</div>
+        <!-- Search Bar -->
+        <div class="search-bar">
+            <input type="text" id="search" oninput="filterAndSearchBooks()" placeholder="Search by title or author...">
+        </div>
+
+        <!-- Filter Bar -->
+        <div class="filter-bar" id="filter-bar">
+            <h3>Filter by Genre:</h3>
+            <label><input type="checkbox" onchange="filterAndSearchBooks()"> Fantasy</label>
+            <label><input type="checkbox" onchange="filterAndSearchBooks()"> Science Fiction</label>
+            <label><input type="checkbox" onchange="filterAndSearchBooks()"> Adventure</label>
+            <label><input type="checkbox" onchange="filterAndSearchBooks()"> Drama</label>
+            <label><input type="checkbox" onchange="filterAndSearchBooks()"> Romance</label>
+            <label><input type="checkbox" onchange="filterAndSearchBooks()"> Horror</label>
+            <label><input type="checkbox" onchange="filterAndSearchBooks()"> Thriller</label>
+        </div>
     
-        <!-- Book Listing -->
         <div id="book-list">
-            <!-- Books will be dynamically added here -->
         </div>
     </div>
     

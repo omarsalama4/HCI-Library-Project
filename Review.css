@@ -1,0 +1,158 @@
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: #f0f0f0;
+    background-image: url('Library2.jpg');
+    background-position: cover;
+    overscroll-behavior: none;
+    min-height: 100vh; 
+    position: relative;
+}
+
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.95);
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+h1, h2 {
+    color: #333;
+}
+h1{
+    text-align: center;
+}
+p {
+    color: #666;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+label {
+    margin-bottom: 5px;
+    color: #333;
+}
+
+select, input, textarea, button {
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+button {
+    background-color: #FEF3D5;
+    color: #333;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #f0f0f0;
+}
+
+.review {
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.9);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.review h3, .review h4 {
+    margin: 5px 0;
+}
+
+.review p {
+    margin: 10px 0;
+}
+
+.message-bar {
+    text-align: center;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.95);
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+.filter-container {
+    margin-top: 20px;
+}
+
+.filter-container label {
+    margin-right: 10px;
+}
+
+.filter-container select {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.menu-toggle {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    z-index: 999;
+    background-color: #FEF3D5;
+    color: #333;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 15px 30px;
+    font-size: 18px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.navbar {
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: rgba(255, 255, 255, 0.95);
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0;
+    transition: width 0.3s ease;
+    z-index: 900;
+}
+
+.navbar.open {
+width: 250px;
+}
+
+.navbar ul {
+margin: 0;
+padding: 0;
+list-style-type: none;
+margin-top: 150px;
+}
+
+.navbar a {
+display: block;
+color: black;
+text-align: center;
+padding: 14px 16px;
+text-decoration: none;
+}
+
+.navbar a:hover {
+background: #FEF3D5;
+color: black;
+}
+
+.navbar .active {
+background-color: #FEF3D5;
+color: black;
+}
+.submit{
+    font-size: large;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}

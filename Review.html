@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reviews - Online Library</title>
+    <link rel="stylesheet" href="Review.css">
+    <link rel="icon" href="online-library.png" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <button class="menu-toggle" onclick="toggleMenu()">Menu</button>
+        <nav class="navbar" id="navbar">
+            <ul>
+                <li><a href="Home.html">Home</a></li>
+                <li><a href="books.html">Menu</a></li>
+                <li><a href="Review.html" class="active">Reviews</a></li>
+                <li><a href="About Us.html" >About Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+        <h1>Book Reviews</h1>
+        <p>Share your thoughts and read what others have to say about their favorite books.</p>
+
+        <h2>Submit Your Review</h2>
+        <form id="review-form">
+            <label for="book-title">Book Title:</label>
+            <select id="book-title" name="book-title" required>
+                <option value="">Select a book</option>
+                <option value="Atomic Habits">Atomic Habits</option>
+                <option value="Jane Eyre">Jane Eyre</option>
+                <option value="The Kite Runner">The Kite Runner</option>
+                <option value="The Spanish Love Deception">The Spanish Love Deception</option>
+                <option value="Displaced">Displaced</option>
+                <option value="The Swordswoman">The Swordswoman</option>
+                <option value="Goliath">Goliath</option>
+                <option value="The Reluctant Coroner">The Reluctant Coroner</option>
+            </select>
+
+            <label for="reviewer-name">Your Name:</label>
+            <input type="text" id="reviewer-name" name="reviewer-name" required>
+
+            <label for="review">Your Review:</label>
+            <textarea id="review" name="review" rows="5" required></textarea>
+
+            <button type="submit" class = "submit">Submit Review</button>
+        </form>
+
+        <div class="filter-container">
+            <label for="filter-reviews">Filter Reviews by Book:</label>
+            <select id="filter-reviews">
+                <option value="all">All</option>
+                <option value="Atomic Habits">Atomic Habits</option>
+                <option value="Jane Eyre">Jane Eyre</option>
+                <option value="The Kite Runner">The Kite Runner</option>
+                <option value="The Spanish Love Deception">The Spanish Love Deception</option>
+                <option value="Displaced">Displaced</option>
+                <option value="The Swordswoman">The Swordswoman</option>
+                <option value="Goliath">Goliath</option>
+                <option value="The Reluctant Coroner">The Reluctant Coroner</option>
+            </select>
+        </div>
+
+        <h2>Recent Reviews</h2>
+        <div id="reviews-container">
+            <!-- reviews inserted here -->
+        </div>
+
+    </div>
+
+    <script src="Review.js"></script>
+</body>
+</html>

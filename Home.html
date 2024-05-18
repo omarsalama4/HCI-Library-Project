@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home - Online Library</title>
     <link rel="stylesheet" href="Home.css">
+    <link rel="icon" href="online-library.png" type="image/x-icon">
 </head>
 <body>
 
@@ -13,78 +14,37 @@
         <nav class="navbar" id="navbar">
             <ul>
                 <li><a href="Home.html" class="active">Home</a></li>
-                <li><a href="books.html">Menu</a></li>
-                <li><a href="reviews.html">Reviews</a></li>
+                <li><a href="books.html">Books</a></li>
+                <li><a href="Review.html">Reviews</a></li>
                 <li><a href="About Us.html">About Us</a></li>
             </ul>
         </nav>
     </header>
 
     <div class="container">
-      <h1>Welcome to Our Online Library</h1>
-      <h2>Where every page is a new Adventure</h2>
-      
-      <p>From classics to contemporary our bookstore offers a wide selection of books to suit
+        <h1>Welcome to Our Online Library</h1>
+        <h2>Where every page is a new Adventure</h2>
+        <p>From classics to contemporary our bookstore offers a wide selection of books to suit
         every taste and interest. Start exploring our shelves today and uncover your next
         literary gem.</p>
-  
-      <div class="featured-books">
-          <h2>Featured Books</h2>
-          <div class="book-container">
-              <div class="book">
-                  <img src="library.jpg" alt="Book Cover">
-                  <h3>Book Title 1</h3>
-                  <p>Author: Author Name</p>
-                  <p>Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed id turpis eget lorem vehicula suscipit.</p>
-              </div>
-              <div class="book-container">
-                <div class="book">
-                    <img src="library.jpg" alt="Book Cover">
-                    <h3>Book Title 1</h3>
-                    <p>Author: Author Name</p>
-                    <p>Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed id turpis eget lorem vehicula suscipit.</p>
-                </div>
-              <div class="book">
-                  <img src="library.jpg" alt="Book Cover">
-                  <h3>Book Title 2</h3>
-                  <p>Author: Author Name</p>
-                  <p>Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed id turpis eget lorem vehicula suscipit.</p>
-              </div>
-          </div>
-      </div>
-      <button class="view-more-btn" onclick="navigateToMenuPage()">View More</button>
 
-      <div class="upcoming-books">
-        <h2>Upcoming Books</h2>
-        <div class="book-container">
-            <div class="book">
-                <img src="library.jpg" alt="Book Cover">
-                <h3>Book Title 1</h3>
-                <p>Author: Author Name</p>
-                <p>Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed id turpis eget lorem vehicula suscipit.</p>
+        <div>
+            <h2>Featured Books</h2>
+            <div class="book-list" id="featured-books-container">
             </div>
-            <div class="book-container">
-              <div class="book">
-                  <img src="library.jpg" alt="Book Cover">
-                  <h3>Book Title 1</h3>
-                  <p>Author: Author Name</p>
-                  <p>Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed id turpis eget lorem vehicula suscipit.</p>
-              </div>
-            <div class="book">
-                <img src="library.jpg" alt="Book Cover">
-                <h3>Book Title 2</h3>
-                <p>Author: Author Name</p>
-                <p>Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed id turpis eget lorem vehicula suscipit.</p>
+        </div>
+        <button class="view-more-btn" onclick="navigateToMenuPage()">View More</button>
+
+        <div>
+            <h2>Upcoming Books</h2>
+            <div class="book-list" id="upcoming-books-container">
             </div>
         </div>
     </div>
 
-  </div>
-
     <div class="message-bar">
         <p>&copy; 2024 Online Library. All rights reserved.</p>
     </div>
-    <script src="AboutUs.js"></script>
+    <script src="Home.js"></script>
 </body>
-    
 </html>
